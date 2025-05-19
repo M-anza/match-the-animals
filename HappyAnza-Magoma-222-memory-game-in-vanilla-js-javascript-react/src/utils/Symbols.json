@@ -1,0 +1,10 @@
+[
+  { "name": "dog", "symbol": "🐶" },
+  { "name": "cat", "symbol": "🐱" },
+  { "name": "mouse", "symbol": "🐭" },
+  { "name": "hamster", "symbol": "🐹" },
+  { "name": "rabbit", "symbol": "🐰" },
+  { "name": "bear", "symbol": "🐻" },
+  { "name": "panda", "symbol": "🐼" },
+  { "name": "koala", "symbol": "🐨" }
+]
