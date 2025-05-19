@@ -1,0 +1,37 @@
+.end-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.youWonImage {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  max-width: 90%;
+  animation: fade-in 1s ease-in-out;
+}
+
+.time-taken {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  animation: fade-in 2s ease-in-out;
+}
+
+.end-game-message {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
