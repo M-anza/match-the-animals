@@ -109,6 +109,7 @@ const App = () => {
         variant="h3"
         component="h1"
         className="memory-game-title"
+        fontWeight="bold"
         gutterBottom
       >
         Match the Animals
