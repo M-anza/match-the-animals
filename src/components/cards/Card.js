@@ -18,7 +18,7 @@ const MemoryCard = ({ card, onClick }) => {
     >
       <CardContent className="card">
         <Typography variant="h5" component="div">
-          {card.isFlipped || card.isMatched ? card.symbol : "?"}
+          {card.isFlipped || card.isMatched ? card.symbol : ""}
         </Typography>
       </CardContent>
     </Card>

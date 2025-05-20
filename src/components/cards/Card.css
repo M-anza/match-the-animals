@@ -9,10 +9,10 @@
 .card {
   width: 50%;
   height: 50%;
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border-radius: 20px;
+  /* background-color: green; */
 }
