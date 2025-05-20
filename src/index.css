@@ -2,6 +2,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('../src/utils/memoryGameBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 html,

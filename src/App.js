@@ -111,7 +111,7 @@ const App = () => {
         className="memory-game-title"
         gutterBottom
       >
-        Memory Game
+        Match the Animals
       </Typography>
 
       {!gameCompleted && (
