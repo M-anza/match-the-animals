@@ -15,6 +15,7 @@ import Timer from "./components/timer/Timer.js";
 import "./App.css";
 import symbols from "./utils/Symbols.json";
 import shuffleArray from "./utils/ShuffledCards.js";
+import InstructionModal from './components/instructions/InstructionModal.js';
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -102,6 +103,11 @@ const App = () => {
     }
     setFlippedCards([]);
   };
+    const [showInstructions, setShowInstructions] = useState(true);
+
+  const handleCloseInstructions = () => {
+    setShowInstructions(false);
+  };
 
   return (
     <Container className="game-container">
@@ -117,17 +123,31 @@ const App = () => {
 
       {!gameCompleted && (
         <FormControl variant="outlined" fullWidth>
-          <InputLabel id="grid-size-label">Grid Size</InputLabel>
+<InputLabel
+  id="grid-size-label"
+  sx={{
+    fontWeight: 'bold',
+    fontSize: '1.50rem',
+  }}
+>
+  level
+</InputLabel>
+
+<div>
+      <InstructionModal open={showInstructions} onClose={handleCloseInstructions} />
+     
+    </div>
+
           <Select
             labelId="grid-size-label"
             value={`${gridSize.rows}x${gridSize.cols}`}
             onChange={handleGridSizeChange}
             label="Grid Size"
           >
-            <MenuItem value="2x2">2x2</MenuItem>
-            <MenuItem value="3x2">3x2</MenuItem>
-            <MenuItem value="4x3">4x3</MenuItem>
-            <MenuItem value="4x4">4x4</MenuItem>
+            <MenuItem value="2x2">level 1</MenuItem>
+            <MenuItem value="3x2">level 2</MenuItem>
+            <MenuItem value="4x3">level 3</MenuItem>
+            <MenuItem value="4x4">level 4</MenuItem>
           </Select>
         </FormControl>
       )}

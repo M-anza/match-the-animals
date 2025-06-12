@@ -3,8 +3,8 @@ import "./EndGame.css";
 
 const EndGame = ({ className, timeTaken, flips }) => {
   const [showImage, setShowImage] = useState(false);
-  const wonImage = require("./images/you_won_pic.webp");
-
+  // const wonImage = require("./images/you_won_pic.webp");
+const wonImage = require("./images/two_cats.jpg");
   useEffect(() => {
     const timerId = setTimeout(() => {
       setShowImage(true);

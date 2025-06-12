@@ -46,6 +46,40 @@
   margin-top: 10px;
   text-align: center;
 }
-.memory-game-title{
-  
+/* Style the label (InputLabel) */
+.MuiInputLabel-root {
+  color: blue !important;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
+
+/* Keep the label blue when focused */
+.Mui-focused.MuiInputLabel-root {
+  color: blue !important;
+}
+
+/* Style the Select text */
+.MuiSelect-select {
+  color: blue !important;
+  font-weight: bold;
+}
+
+/* Style the Select border */
+.MuiOutlinedInput-root {
+  border-color: blue !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: blue !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: blue !important;
+}
+
+/* Style the MenuItem options */
+.MuiMenuItem-root {
+  color: blue !important;
+  font-weight: bold;
+}
+
